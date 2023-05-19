@@ -1,0 +1,70 @@
+html{
+    background-color: #272821;
+}
+
+.typer::before{
+    content: "";
+    animation: typing 2s 1s forwards;
+}
+
+.typer::after{
+    content: "";
+    border-right: 2px solid #86C7D1;
+    animation: blink 1s linear infinite;
+}
+
+.revel{
+    opacity: 0;
+    animation: reveal 2s 3s forwards;
+}
+
+.logo{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    border-radius: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes reveal {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+h1 {
+    font-size: 9vmin;
+    color: #86C7D1;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+}
+
+h2 {
+    font-size: 5vmin;
+    color: #86C7D1;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+@keyframes typing{
+    9.09% { content: "D"; }
+    18.18% { content: "De"; }
+    27.27% { content: "Dev"; }
+    36.36% { content: "DevO"; }
+    45.45% { content: "DevOv"; }
+    54.54% { content: "DevOve"; }
+    63.63% { content: "DevOver"; }
+    72.72% { content: "DevOverf"; }
+    81.81% { content: "DevOverfl"; }
+    90.90% { content: "DevOverflo"; }
+    100% { content: "DevOverflow"; }
+}
